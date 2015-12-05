@@ -2,7 +2,7 @@
 (function() {
   var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'mpContaniterModel', 'aboutUsCtrl', 'desPartnersCtrl', 'USAExpertsCtrl', 'ui.dialog'], function(doctorInfo, loginTmp, mpContaniterModel, aboutUsCtrl, desPartnersCtrl, USAExpertsCtrl) {
+  define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'doT!../views/log/register', 'mpContaniterModel', 'aboutUsCtrl', 'desPartnersCtrl', 'USAExpertsCtrl', 'ui.dialog'], function(doctorInfo, loginTmp, registerTmp, mpContaniterModel, aboutUsCtrl, desPartnersCtrl, USAExpertsCtrl) {
     var mpContaniter;
     return mpContaniter = (function() {
       var doctorUrlPanel, mainBody, mainHeader, mainPanel, menuListPanel;
@@ -51,6 +51,21 @@
               var loginObj;
               loginObj = {};
               return loginObj = _this.mpContaniterModel.login(loginPanel, loginObj);
+            });
+          };
+        })(this)).on('click', '.register', (function(_this) {
+          return function(event) {
+            var registerPanel;
+            return registerPanel = $(registerTmp('')).dialog({
+              title: '注册',
+              modal: true,
+              width: 400,
+              height: 400,
+              resizable: false
+            }).on('click', '.register', function(event) {
+              var registerObj;
+              registerObj = {};
+              return registerObj = _this.mpContaniterModel.register(registerPanel, registerObj);
             });
           };
         })(this)).on('click', '.aboutUs', (function(_this) {
