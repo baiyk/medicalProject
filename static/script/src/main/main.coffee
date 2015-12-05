@@ -16,6 +16,7 @@ window.IMG_BASEPATH = window.STATIC_BASEPATH + "img/"
 require.config(
   baseUrl: 'static/script'
   paths:
+    'util' : "src/common/util"
     ztree: 'lib/jquery.ztree.all-3.5.min'
     doTCompiler:  'lib/doT/doT'
     text:'lib/requirejs-text/text'
@@ -52,6 +53,7 @@ require.config(
     'USAExpertsCtrl': 'src/USAExperts/USAExpertsContaniter'
     'USAExpertsModel': 'src/USAExperts/USAExpertsModel'
     'index': 'src/index'
+    'token':  "src/common/token"
   shim:
     'ui.mouse': ['ui.core']
     'ui.draggable': ['ui.core', 'ui.widget', 'ui.mouse']
@@ -67,6 +69,6 @@ require.config(
     'timepicker': ['ui.datepicker', 'ui.datepicker', 'ui.slider', 'ui.datepicker-zh-CN']
   doT:
     ext: '.html'
-  deps: ['index']
+  deps: ['util','token','index']
 
 )

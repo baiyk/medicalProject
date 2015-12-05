@@ -56,8 +56,8 @@ $route['translate_uri_dashes'] = FALSE;
 /**
  * check this model folder user login status
  */
-$route["check_login_model"] = array(
-    "login"
+$route["check_login_controller"] = array(
+    
 );
 
 

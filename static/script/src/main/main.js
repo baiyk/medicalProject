@@ -17,6 +17,7 @@
   require.config({
     baseUrl: 'static/script',
     paths: {
+      'util': "src/common/util",
       ztree: 'lib/jquery.ztree.all-3.5.min',
       doTCompiler: 'lib/doT/doT',
       text: 'lib/requirejs-text/text',
@@ -52,7 +53,8 @@
       'desPartnersCtrl': 'src/desPartners/desPartnersContaniter',
       'USAExpertsCtrl': 'src/USAExperts/USAExpertsContaniter',
       'USAExpertsModel': 'src/USAExperts/USAExpertsModel',
-      'index': 'src/index'
+      'index': 'src/index',
+      'token': "src/common/token"
     },
     shim: {
       'ui.mouse': ['ui.core'],
@@ -71,7 +73,7 @@
     doT: {
       ext: '.html'
     },
-    deps: ['index']
+    deps: ['util', 'token', 'index']
   });
 
 }).call(this);

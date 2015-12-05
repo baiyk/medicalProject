@@ -41,7 +41,22 @@ class BaseController extends CI_Controller {
      * 前置检查方法
      */
     private function before_call(){
-
+        //获取检查公共的规则
+        $route = $this->router;
+        $routes = $route->routes;
+        if(!empty($routes["check_login_controller"])){
+            //如果当前控制器在规则中，则去检查用户是否登录状态
+            if(in_array($route->class,$routes["check_login_controller"])){
+                //检查登录态
+                $ip = $_SERVER["REMOTE_ADDR"];
+                $token = $_COOKIE["token"];
+                $key = md5($ip.$token);
+                $this->load->library('session');
+                if(empty($_SESSION[$key])){
+                    throw new Exception("您尚未登录或登录超时",1000);
+                }
+            }
+        }
 
     }
 
