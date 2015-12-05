@@ -1,0 +1,10 @@
+.loginPanel form > div > span {
+  width: 45px;
+  display: inline-block;
+}
+.loginPanel form .loginBtn {
+  text-align: center;
+}
+.loginPanel form .loginBtn button {
+  width: 200px;
+}

@@ -1,0 +1,62 @@
+@import "lib/bootstrap.css";
+@import "lib/bootstrap-responsive.css";
+@import "main.css";
+@import "lib/jquery-ui-1.10.0.custom.css";
+.aboutUsPanel .aboutUsTitle {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.aboutUsPanel .aboutUsTitle > span {
+  font-size: 20px;
+}
+.aboutUsPanel .aboutUsLine {
+  height: 5px;
+  background-color: #0088D1;
+  width: 100%;
+}
+.aboutUsPanel .introduce {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 25px;
+}
+.aboutUsPanel .introduce > span {
+  font-size: 16px;
+}
+.aboutUsPanel .ServiceConcept {
+  text-align: center;
+  margin-top: 10px;
+}
+.aboutUsPanel .ServiceConcept .ServiceConceptTitle {
+  font-size: 24px;
+  color: red;
+  display: block;
+  margin-bottom: 15px;
+}
+.aboutUsPanel .ServiceConcept .ServiceConceptDetail {
+  font-size: 20px;
+  line-height: 25px;
+}
+.desPartnersPanel {
+  padding: 5px 15px;
+}
+.desPartnersPanel .desPartnersTitle {
+  font-size: 20px;
+}
+.desPartnersPanel .hospitalPanel {
+  line-height: 25px;
+}
+.desPartnersPanel .hospitalPanel > a {
+  font-size: 16px;
+}
+.loginPanel form > div > span {
+  width: 45px;
+  display: inline-block;
+}
+.loginPanel form .loginBtn {
+  text-align: center;
+}
+.loginPanel form .loginBtn button {
+  width: 200px;
+}

@@ -1,0 +1,12 @@
+.desPartnersPanel {
+  padding: 5px 15px;
+}
+.desPartnersPanel .desPartnersTitle {
+  font-size: 20px;
+}
+.desPartnersPanel .hospitalPanel {
+  line-height: 25px;
+}
+.desPartnersPanel .hospitalPanel > a {
+  font-size: 16px;
+}
