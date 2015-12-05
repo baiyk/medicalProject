@@ -2,7 +2,7 @@
 (function() {
   var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 
-  define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'mpContaniterModel', 'aboutUsCtrl', 'desPartnersCtrl', 'ui.dialog'], function(doctorInfo, loginTmp, mpContaniterModel, aboutUsCtrl, desPartnersCtrl) {
+  define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'mpContaniterModel', 'aboutUsCtrl', 'desPartnersCtrl', 'USAExpertsCtrl', 'ui.dialog'], function(doctorInfo, loginTmp, mpContaniterModel, aboutUsCtrl, desPartnersCtrl, USAExpertsCtrl) {
     var mpContaniter;
     return mpContaniter = (function() {
       var doctorUrlPanel, mainBody, mainHeader, mainPanel, menuListPanel;
@@ -30,7 +30,7 @@
         urlPanel = '';
         for (i = 0, len = doctorUrlList.length; i < len; i++) {
           doctorData = doctorUrlList[i];
-          urlPanel += "<div id=" + doctorData.id + " class=\"doctorPic\">\n<img src=" + BASEPATH + "/static/img" + doctorData.url + ">\n</div>";
+          urlPanel += "<div id=" + doctorData.id + " class=\"doctorPic\">\n<img src=" + "img" + doctorData.url + ">\n</div>";
         }
         doctorUrlPanel.find('.doctorListScroll').append(urlPanel);
         this.bindEvent();
@@ -60,6 +60,10 @@
         })(this)).on('click', '.DesPartners', (function(_this) {
           return function(event) {
             return new desPartnersCtrl(mainBody);
+          };
+        })(this)).on('click', '.USAExperts', (function(_this) {
+          return function(event) {
+            return new USAExpertsCtrl(mainBody);
           };
         })(this));
         doctorUrlPanel.on('click', '.doctorPic img', (function(_this) {

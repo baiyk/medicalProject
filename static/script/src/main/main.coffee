@@ -1,5 +1,5 @@
 require.config(
-  baseUrl: 'script'
+  baseUrl: 'script',
   paths:
     ztree: 'lib/jquery.ztree.all-3.5.min'
     doTCompiler:  'lib/doT/doT'
@@ -34,6 +34,8 @@ require.config(
     'mpContaniterModel': 'src/mpContaniter/mpContaniterModel'
     'aboutUsCtrl': 'src/aboutUs/aboutUsContaniter'
     'desPartnersCtrl': 'src/desPartners/desPartnersContaniter'
+    'USAExpertsCtrl': 'src/USAExperts/USAExpertsContaniter'
+    'USAExpertsModel': 'src/USAExperts/USAExpertsModel'
     'index': 'src/index'
   shim:
     'ui.mouse': ['ui.core']

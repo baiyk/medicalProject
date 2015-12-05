@@ -1,0 +1,22 @@
+<div class="medicalSubjectsContaniter">
+    <div class="mslistPanel">
+        {{for(var i = 0; i < it.msData.length; i++){
+            var msData = it.msData[i];
+        }}
+        <div id='{{=msData.ID}}' class="msDocPanel">
+            <a>{{=msData.name || ''}}</a>
+            {{for(var j = 0; j < msData.doctorList.length; j++){
+                var doctorData = msData.doctorList[j];
+            }}
+            <a id='{{=doctorData.ID}}' class="doctorName">{{=doctorData.name || ''}}</a>
+            {{
+                }
+            }}
+            <span>{{=msData.description || ''}}</span>
+        </div>
+        {{
+            }
+        }}
+    </div>
+
+</div>

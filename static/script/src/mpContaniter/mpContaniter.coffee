@@ -1,4 +1,4 @@
-define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'mpContaniterModel', 'aboutUsCtrl', 'desPartnersCtrl', 'ui.dialog'], (doctorInfo, loginTmp, mpContaniterModel, aboutUsCtrl, desPartnersCtrl)->
+define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'mpContaniterModel', 'aboutUsCtrl', 'desPartnersCtrl', 'USAExpertsCtrl', 'ui.dialog'], (doctorInfo, loginTmp, mpContaniterModel, aboutUsCtrl, desPartnersCtrl, USAExpertsCtrl)->
   class mpContaniter
     mainPanel = null
     mainHeader = null
@@ -39,8 +39,9 @@ define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'mpContaniterM
         new aboutUsCtrl(mainBody)
       ).on('click', '.DesPartners', (event)=>
         new desPartnersCtrl(mainBody)
+      ).on('click', '.USAExperts', (event)=>
+        new USAExpertsCtrl(mainBody)
       )
-
 
       doctorUrlPanel.on('click', '.doctorPic img', (event)=>
           doctorPic = $(event.currentTarget)
