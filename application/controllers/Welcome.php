@@ -24,7 +24,6 @@ class Welcome extends CI_Controller {
 	}
 
     public function uploadFile(){
-        echo "我是宏碁120513";
         $config['upload_path']      = "./file";
         $config['allowed_types']    = 'gif|jpg|png|doc|pdf';
         $config['max_size']     = 1000;

@@ -30,7 +30,7 @@
         urlPanel = '';
         for (i = 0, len = doctorUrlList.length; i < len; i++) {
           doctorData = doctorUrlList[i];
-          urlPanel += "<div id=" + doctorData.id + " class=\"doctorPic\">\n<img src=" + "img" + doctorData.url + ">\n</div>";
+          urlPanel += "<div id=" + doctorData.id + " class=\"doctorPic\">\n<img src=" + IMG_BASEPATH + doctorData.url + ">\n</div>";
         }
         doctorUrlPanel.find('.doctorListScroll').append(urlPanel);
         this.bindEvent();

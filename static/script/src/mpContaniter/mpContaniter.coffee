@@ -17,7 +17,7 @@ define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'mpContaniterM
       urlPanel = ''
       for doctorData in doctorUrlList
         urlPanel += """<div id=""" + doctorData.id + """ class="doctorPic">
-                          <img src=""" + "img" + doctorData.url + """>
+                          <img src=""" + IMG_BASEPATH + doctorData.url + """>
                       </div>"""
       doctorUrlPanel.find('.doctorListScroll').append(urlPanel)
       @bindEvent()

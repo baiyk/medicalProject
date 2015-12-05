@@ -14,13 +14,13 @@
         return [
           {
             id: 1,
-            url: '/doctor/doctor1.png'
+            url: 'doctor/doctor1.png'
           }, {
             id: 2,
-            url: '/doctor/doctor2.png'
+            url: 'doctor/doctor2.png'
           }, {
             id: 3,
-            url: '/doctor/doctor3.png'
+            url: 'doctor/doctor3.png'
           }
         ];
       };
@@ -28,13 +28,21 @@
       mpContaniterModel.prototype.login = function(loginPanel, loginObj, successHandler) {
         var i, j, loginData, loginDataList, ref;
         loginDataList = loginPanel.find('.loginForm').serializeArray();
-        for (i = j = 0, ref = loginDataList.length; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
+        for (i = j = 0, ref = loginDataList.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
           loginData = loginDataList[i];
-          loginObj[loginData.name] = loginData.val;
+          loginObj[loginData.name] = loginData.value;
         }
-        return $.post(basePath + '', loginObj, (function(_this) {
-          return function(response) {};
-        })(this), 'json');
+        debugger;
+        return $.post(BASEPATH + "Login/loginSystem", {
+          user: {
+            userId: loginObj.userId,
+            pwd: loginObj.pwd
+          }
+        }, function(responseMsg) {
+          if (responseMsg.errorCode) {
+            alert(responseMsg.errorDesc);
+          }
+        }, "json");
       };
 
       return mpContaniterModel;

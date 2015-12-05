@@ -1,5 +1,20 @@
+window.BASEPATH = (->
+  #获取当前网址，如： http://localhost:8083/uimcardprj/share/meun.jsp
+  curWwwPath=window.document.location.href;
+  ##获取主机地址之后的目录，如： uimcardprj/share/meun.jsp
+  pathName=window.document.location.pathname;
+  pos=curWwwPath.indexOf(pathName);
+  ##获取主机地址，如： http://localhost:8083
+  localhostPaht=curWwwPath.substring(0,pos);
+  ##获取带"/"的项目名，如：/uimcardprj
+  projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+  return(localhostPaht+projectName+"/");
+)()
+window.STATIC_BASEPATH = window.BASEPATH + "static/"
+window.IMG_BASEPATH = window.STATIC_BASEPATH + "img/"
+
 require.config(
-  baseUrl: 'script',
+  baseUrl: 'static/script'
   paths:
     ztree: 'lib/jquery.ztree.all-3.5.min'
     doTCompiler:  'lib/doT/doT'
