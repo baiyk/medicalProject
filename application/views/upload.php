@@ -34,7 +34,7 @@
         </div>
         <div class="userContainer">
             <span class="login">登录</span>
-            <span class="logout">注册</span>
+            <span class="register">注册</span>
         </div>
     </div>
     <div class="mainBody">

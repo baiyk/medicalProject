@@ -6,6 +6,7 @@
     var mpContaniterModel;
     return mpContaniterModel = (function() {
       function mpContaniterModel() {
+        this.register = bind(this.register, this);
         this.login = bind(this.login, this);
         this.getDoctorUrlList = bind(this.getDoctorUrlList, this);
       }
@@ -32,7 +33,6 @@
           loginData = loginDataList[i];
           loginObj[loginData.name] = loginData.value;
         }
-        debugger;
         return $.post(BASEPATH + "Login/loginSystem", {
           user: {
             userId: loginObj.userId,
@@ -41,7 +41,35 @@
         }, function(responseMsg) {
           if (responseMsg.errorCode) {
             alert(responseMsg.errorDesc);
+            return;
           }
+          return loginPanel.dialog('close');
+        }, "json");
+      };
+
+      mpContaniterModel.prototype.register = function(registerPanel, registerObj) {
+        var i, j, loginData, loginDataList, ref;
+        loginDataList = registerPanel.find('.registerForm').serializeArray();
+        for (i = j = 0, ref = loginDataList.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
+          loginData = loginDataList[i];
+          registerObj[loginData.name] = loginData.value;
+        }
+        if (registerObj.pwd !== registerObj.resetPwd) {
+          alert('密码不一致');
+          registerObj = {};
+          return;
+        }
+        return $.post(BASEPATH + "Login/loginSystem", {
+          user: {
+            userId: registerObj.userId,
+            pwd: registerObj.pwd
+          }
+        }, function(responseMsg) {
+          if (responseMsg.errorCode) {
+            alert(responseMsg.errorDesc);
+            return;
+          }
+          return registerPanel.dialog('close');
         }, "json");
       };
 

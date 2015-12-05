@@ -1,4 +1,4 @@
-define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'mpContaniterModel', 'aboutUsCtrl', 'desPartnersCtrl', 'USAExpertsCtrl', 'ui.dialog'], (doctorInfo, loginTmp, mpContaniterModel, aboutUsCtrl, desPartnersCtrl, USAExpertsCtrl)->
+define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'doT!../views/log/register', 'mpContaniterModel', 'aboutUsCtrl', 'desPartnersCtrl', 'USAExpertsCtrl', 'ui.dialog'], (doctorInfo, loginTmp, registerTmp, mpContaniterModel, aboutUsCtrl, desPartnersCtrl, USAExpertsCtrl)->
   class mpContaniter
     mainPanel = null
     mainHeader = null
@@ -35,6 +35,18 @@ define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'mpContaniterM
           loginObj = @mpContaniterModel.login(loginPanel, loginObj)
         )
 
+      ).on('click', '.register', (event)=>
+        registerPanel = $(registerTmp('')).dialog(
+          title: '注册'
+          modal: true;
+          width: 400;
+          height: 400;
+          resizable: false
+        ).on('click', '.register', (event)=>
+          registerObj = {}
+          registerObj = @mpContaniterModel.register(registerPanel, registerObj)
+
+        )
       ).on('click', '.aboutUs', (event)=>
         new aboutUsCtrl(mainBody)
       ).on('click', '.DesPartners', (event)=>

@@ -1,9 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<div class="registerPanel">
+    <form class="registerForm" onsubmit="javascript:return false;">
+        <div class="userName" name="userName">
+            <span>用户名:</span>
+            <input class="userNameInput" type="text" name="userId"/>
+        </div>
 
-</body>
-</html>
+        <div class="password">
+            <span>密码:</span>
+            <input class="passwordInput" type="password" name="pwd"/>
+        </div>
+
+        <div class="password">
+            <span>重新输入密码:</span>
+            <input class="passwordInput" type="password" name="resetPwd"/>
+        </div>
+
+        <div class="emailPanel">
+            <span>邮箱:</span>
+            <input type="email" class="emailInput"/>
+        </div>
+
+        <div class="phonePanel">
+            <span>手机号:</span>
+            <input type="text" class="phoneInput"/>
+        </div>
+
+        <div>
+            <img>
+        </div>
+
+        <div class="errorPanel">
+            <span class="errorMsg"></span>
+        </div>
+
+        <div class="loginBtn">
+            <button class="btn btn-small btn-primary register">注册</button>
+        </div>
+    </form>
+</div>
