@@ -16,22 +16,37 @@ class Register_model extends CI_Model{
         parent::__construct();
     }
 
+    /**
+     * 注册用户
+     * @param array $user
+     * @return string
+     * @throws Exception
+     */
     public function registerUser($user = array()){
         $guid = $this->get_guid();
-        if(!$user){
-            //添加假数据
-            $user = array(
-                "guid" => $guid,
-                "name" => "白永科",
-                "userId" => "18724231982",
-                "password" => "123456",
-                "userType" => "1",
-            );
-            $this->db->insert('user', $user);
-
+        if($user){
+            if(!empty($user["captcha"])){
+                unset($user["captcha"]);
+            }
+            $registerUser = array();
+            $registerUser["guid"] = $guid;
+            $registerUser["userId"] = $user["userId"];
+            $registerUser["password"] = $user["pwd"];
+            $this->db->insert('user', $registerUser);
+        }else{
+            throw new Exception("注册信息不完善，请填写正确",1004);
         }
         return $guid;
     }
 
+    public function isExitUser($userId){
+        $sql = "SELECT GUID FROM USER WHERE USERID = ?";
+        $userQuery = $this->db->query($sql, array($userId));
+        $userResult = $userQuery->result();
+        if(count($userResult) <= 0){
+            return false;
+        }
+        return true;
+    }
 }
  

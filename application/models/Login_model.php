@@ -24,7 +24,7 @@ class Login_model extends CI_Model{
         $userQuery = $this->db->query($sql, array($userInfo["userId"], $userInfo["pwd"]));
         $userResult = $userQuery->result();
         if(count($userResult) <= 0){
-            throw new Exception("用户不存在",1002);
+            throw new Exception("您输入的账号或密码有误",1002);
         }
         $userInfo = $userResult[0];
         $ip = $_SERVER["REMOTE_ADDR"];

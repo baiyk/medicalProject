@@ -2,31 +2,21 @@
     <form class="registerForm" onsubmit="javascript:return false;">
         <div class="userName" name="userName">
             <span>用户名:</span>
-            <input class="userNameInput" type="text" name="userId"/>
+            <input class="userNameInput" placeholder="手机号或邮箱" type="text" name="userId"/>
         </div>
-
+        <div>
+            <span>验证码:</span>
+            <input class="userCaptcha" placeholder="输入验证码" type="text" name="captcha"/>
+            <img src="{{=BASEPATH}}Verify/getImgCaptcha" class="img_captcha">
+        </div>
         <div class="password">
             <span>密码:</span>
-            <input class="passwordInput" type="password" name="pwd"/>
+            <input class="passwordInput" placeholder="输入密码" type="password" name="pwd"/>
         </div>
 
         <div class="password">
             <span>重新输入密码:</span>
-            <input class="passwordInput" type="password" name="resetPwd"/>
-        </div>
-
-        <div class="emailPanel">
-            <span>邮箱:</span>
-            <input type="email" class="emailInput"/>
-        </div>
-
-        <div class="phonePanel">
-            <span>手机号:</span>
-            <input type="text" class="phoneInput"/>
-        </div>
-
-        <div>
-            <img>
+            <input class="passwordInput" placeholder="请再次输入密码" type="password" name="resetPwd"/>
         </div>
 
         <div class="errorPanel">

@@ -39,10 +39,13 @@
             pwd: loginObj.pwd
           }
         }, function(responseMsg) {
+          var responseUserInfo;
           if (responseMsg.errorCode) {
             alert(responseMsg.errorDesc);
             return;
           }
+          responseUserInfo = responseMsg.userInfo || {};
+          $.cookie.setCookie("username", responseUserInfo.name);
           return loginPanel.dialog('close');
         }, "json");
       };
@@ -59,10 +62,11 @@
           registerObj = {};
           return;
         }
-        return $.post(BASEPATH + "Login/loginSystem", {
+        return $.post(BASEPATH + "Register/registerUser", {
           user: {
             userId: registerObj.userId,
-            pwd: registerObj.pwd
+            pwd: registerObj.pwd,
+            captcha: registerObj.captcha
           }
         }, function(responseMsg) {
           if (responseMsg.errorCode) {

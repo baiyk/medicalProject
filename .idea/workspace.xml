@@ -32,38 +32,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/src/main/main.coffee">
+      <file leaf-file-name="mpContaniter.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/script/src/mpContaniter/mpContaniter.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="23" selection-start="3327" selection-end="3334" vertical-scroll-proportion="0.0" vertical-offset="507" max-vertical-offset="1200">
+            <state line="46" column="46" selection-start="1831" selection-end="1831" vertical-scroll-proportion="-2.851852" vertical-offset="536" max-vertical-offset="1320">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Welcome.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
+      <file leaf-file-name="mpContaniterModel.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/script/src/mpContaniter/mpContaniterModel.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="4.2083335" vertical-offset="461" max-vertical-offset="810">
+            <state line="52" column="92" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0" vertical-offset="713" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoload.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <file leaf-file-name="Register_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Register_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="33" selection-start="2662" selection-end="2662" vertical-scroll-proportion="3.375" vertical-offset="1356" max-vertical-offset="2025">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="token.coffee" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/script/src/common/token.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <folding />
+            <state line="41" column="30" selection-start="884" selection-end="894" vertical-scroll-proportion="-8.583333" vertical-offset="289" max-vertical-offset="735">
+              <folding>
+                <marker date="1449375755000" expanded="true" signature="921:959" placeholder="SELECT GUID ..USER..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,16 +64,7 @@
       <file leaf-file-name="Login.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/config/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="4" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.57020056" vertical-offset="686" max-vertical-offset="1035">
+            <state line="10" column="8" selection-start="306" selection-end="359" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -89,7 +73,47 @@
       <file leaf-file-name="BaseController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/BaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="-4.5" vertical-offset="447" max-vertical-offset="1020">
+            <state line="30" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="-4.5" vertical-offset="222" max-vertical-offset="1080">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login_model.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/Login_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="168" selection-end="168" vertical-scroll-proportion="0.33128834" vertical-offset="87" max-vertical-offset="870">
+              <folding>
+                <marker date="1449376092000" expanded="true" signature="466:518" placeholder="SELECT * FRO..USER..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Verify_model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/Verify_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="46" selection-start="1969" selection-end="1969" vertical-scroll-proportion="-7.9583335" vertical-offset="709" max-vertical-offset="1155">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Verify.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Verify.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="45" selection-start="373" selection-end="373" vertical-scroll-proportion="-6.7083335" vertical-offset="154" max-vertical-offset="480">
+              <folding>
+                <element signature="e#6#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Register.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="687" selection-end="687" vertical-scroll-proportion="-5.4583335" vertical-offset="199" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -122,23 +146,26 @@
         <option value="$PROJECT_DIR$/application/models/Register.php" />
         <option value="$PROJECT_DIR$/system/core/Model.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Register.php" />
-        <option value="$PROJECT_DIR$/application/models/Register_model.php" />
         <option value="$PROJECT_DIR$/application/views/upload.php" />
         <option value="$PROJECT_DIR$/application/controllers/Welcome.php" />
         <option value="$PROJECT_DIR$/static/script/src/index.coffee" />
         <option value="$PROJECT_DIR$/static/views/log/login.html" />
         <option value="$PROJECT_DIR$/static/script/src/mpContaniter/mpContaniter.coffee" />
-        <option value="$PROJECT_DIR$/static/script/src/mpContaniter/mpContaniterModel.coffee" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/controllers/Login.php" />
         <option value="$PROJECT_DIR$/static/script/src/token.coffee" />
         <option value="$PROJECT_DIR$/static/script/src/main/main.coffee" />
         <option value="$PROJECT_DIR$/static/script/src/common/util.coffee" />
         <option value="$PROJECT_DIR$/static/script/src/common/token.coffee" />
-        <option value="$PROJECT_DIR$/application/controllers/BaseController.php" />
-        <option value="$PROJECT_DIR$/application/models/Login_model.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/static/views/log/register.html" />
+        <option value="$PROJECT_DIR$/application/controllers/BaseController.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Verify.php" />
+        <option value="$PROJECT_DIR$/static/script/src/mpContaniter/mpContaniterModel.coffee" />
+        <option value="$PROJECT_DIR$/application/models/Verify_model.php" />
+        <option value="$PROJECT_DIR$/application/models/Register_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Register.php" />
+        <option value="$PROJECT_DIR$/application/models/Login_model.php" />
       </list>
     </option>
   </component>
@@ -207,20 +234,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="user_guide" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medicalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medicalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -240,6 +253,144 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mpContaniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medicalProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,24 +441,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medicalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medicalProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -442,35 +575,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/controllers/BaseController.php</url>
-          <line>45</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/models/Login_model.php</url>
           <line>13</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/controllers/BaseController.php</url>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/controllers/Register.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="12" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/config/migration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/mimes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2460" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/profiler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="433" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/config/smileys.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050" />
@@ -528,16 +650,6 @@
         <state line="65" column="37" selection-start="2358" selection-end="2364" vertical-scroll-proportion="0.6164383" vertical-offset="750" max-vertical-offset="8625" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/views/log/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.0" vertical-offset="735" max-vertical-offset="840" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/script/lib/require.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630" />
@@ -573,16 +685,6 @@
         <state line="198" column="8" selection-start="6168" selection-end="6169" vertical-scroll-proportion="0.33333334" vertical-offset="2777" max-vertical-offset="3360" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="335" selection-end="336" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="300" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Register_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="40" selection-start="457" selection-end="468" vertical-scroll-proportion="0.5605381" vertical-offset="0" max-vertical-offset="669" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/core/Loader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="218" column="0" selection-start="5297" selection-end="5297" vertical-scroll-proportion="0.33226836" vertical-offset="3166" max-vertical-offset="21015" />
@@ -603,13 +705,6 @@
         <state line="20" column="19" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1185" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/views/log/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="65" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/script/lib/jquery-1.9.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7606" column="4" selection-start="213573" selection-end="213573" vertical-scroll-proportion="0.0" vertical-offset="113768" max-vertical-offset="143865">
@@ -624,13 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/src/mpContaniter/mpContaniterModel.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="12" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/core/Output.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="170" column="20" selection-start="3904" selection-end="3904" vertical-scroll-proportion="0.0" vertical-offset="2406" max-vertical-offset="12090">
@@ -641,13 +729,6 @@
     <entry file="file://$PROJECT_DIR$/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="23" selection-start="4244" selection-end="4249" vertical-scroll-proportion="0.5123839" vertical-offset="914" max-vertical-offset="1860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/src/mpContaniter/mpContaniter.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="15" selection-start="382" selection-end="393" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>
@@ -680,13 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/script/src/index.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/libraries/Cache/Cache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="149" column="32" selection-start="4228" selection-end="4228" vertical-scroll-proportion="0.48172757" vertical-offset="1945" max-vertical-offset="3915">
@@ -696,7 +770,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/script/src/common/token.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+        <state line="13" column="18" selection-start="514" selection-end="514" vertical-scroll-proportion="0.5227882" vertical-offset="0" max-vertical-offset="373">
           <folding />
         </state>
       </provider>
@@ -717,45 +791,126 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="33" selection-start="2662" selection-end="2662" vertical-scroll-proportion="3.375" vertical-offset="1356" max-vertical-offset="2025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="4.2083335" vertical-offset="461" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="141" selection-end="141" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Login_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1486" selection-end="1486" vertical-scroll-proportion="2.2546012" vertical-offset="0" max-vertical-offset="870">
-          <folding>
-            <marker date="1449327593000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..USER..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="847" selection-end="847" vertical-scroll-proportion="-4.5" vertical-offset="447" max-vertical-offset="1020">
+        <state line="85" column="33" selection-start="2662" selection-end="2662" vertical-scroll-proportion="-0.2320917" vertical-offset="1356" max-vertical-offset="2025">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="4" selection-start="2069" selection-end="2069" vertical-scroll-proportion="0.57020056" vertical-offset="686" max-vertical-offset="1035">
+        <state line="58" column="28" selection-start="2051" selection-end="2051" vertical-scroll-proportion="0.5272206" vertical-offset="686" max-vertical-offset="1035">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="3.2083333" vertical-offset="437" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/views/log/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="65" selection-start="232" selection-end="232" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="0" selection-start="1633" selection-end="1633" vertical-scroll-proportion="2.2546012" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/gd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1430" column="13" selection-start="39305" selection-end="39305" vertical-scroll-proportion="-1.6071428" vertical-offset="21990" max-vertical-offset="40275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/views/log/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="313" selection-end="313" vertical-scroll-proportion="2.9583333" vertical-offset="176" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/src/index.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/src/mpContaniter/mpContaniter.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="46" selection-start="1831" selection-end="1831" vertical-scroll-proportion="-2.851852" vertical-offset="536" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="306" selection-end="359" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/script/src/mpContaniter/mpContaniterModel.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="92" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.0" vertical-offset="713" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="-4.5" vertical-offset="222" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Verify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="373" selection-end="373" vertical-scroll-proportion="-6.7083335" vertical-offset="154" max-vertical-offset="480">
+          <folding>
+            <element signature="e#6#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Verify_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="46" selection-start="1969" selection-end="1969" vertical-scroll-proportion="-7.9583335" vertical-offset="709" max-vertical-offset="1155">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Register_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="30" selection-start="884" selection-end="894" vertical-scroll-proportion="-8.583333" vertical-offset="289" max-vertical-offset="735">
+          <folding>
+            <marker date="1449375755000" expanded="true" signature="921:959" placeholder="SELECT GUID ..USER..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="687" selection-end="687" vertical-scroll-proportion="-5.4583335" vertical-offset="199" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Login_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="168" selection-end="168" vertical-scroll-proportion="0.33128834" vertical-offset="87" max-vertical-offset="870">
+          <folding>
+            <marker date="1449376092000" expanded="true" signature="466:518" placeholder="SELECT * FRO..USER..." />
+          </folding>
         </state>
       </provider>
     </entry>
