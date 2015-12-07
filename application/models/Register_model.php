@@ -32,6 +32,10 @@ class Register_model extends CI_Model{
             $registerUser["guid"] = $guid;
             $registerUser["userId"] = $user["userId"];
             $registerUser["password"] = $user["pwd"];
+            //设置管理员账号 账号默认为admin的默认为管理员
+            if($registerUser["userId"] == "admin"){
+                $registerUser["isAdmin"] = 1;
+            }
             $this->db->insert('user', $registerUser);
         }else{
             throw new Exception("注册信息不完善，请填写正确",1004);
@@ -39,14 +43,5 @@ class Register_model extends CI_Model{
         return $guid;
     }
 
-    public function isExitUser($userId){
-        $sql = "SELECT GUID FROM USER WHERE USERID = ?";
-        $userQuery = $this->db->query($sql, array($userId));
-        $userResult = $userQuery->result();
-        if(count($userResult) <= 0){
-            return false;
-        }
-        return true;
-    }
 }
  

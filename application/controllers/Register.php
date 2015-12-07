@@ -15,8 +15,8 @@ class Register extends BaseController {
         if(empty($user["userId"])){
             throw new Exception("注册信息不完善，请填写正确",1000);
         }
-        $this->load->model("Register_model",'',true);
-        $isExit = $this->Register_model->isExitUser($user["userId"]);
+        $this->load->model("User_model",'',true);
+        $isExit = $this->User_model->isExitUser($user["userId"]);
         if($isExit){
             throw new Exception("该账号已存在，请更换用户名",1000);
         }

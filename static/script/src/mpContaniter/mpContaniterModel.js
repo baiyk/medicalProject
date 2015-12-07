@@ -8,6 +8,8 @@
       function mpContaniterModel() {
         this.register = bind(this.register, this);
         this.login = bind(this.login, this);
+        this.getDocumentList = bind(this.getDocumentList, this);
+        this.getDocumentList = bind(this.getDocumentList, this);
         this.getDoctorUrlList = bind(this.getDoctorUrlList, this);
       }
 
@@ -24,6 +26,30 @@
             url: 'doctor/doctor3.png'
           }
         ];
+      };
+
+      mpContaniterModel.prototype.getDocumentList = function(classification, callback) {
+        return $.post(BASEPATH + "Document/getDocumentList", {
+          classification: classification
+        }, function(responseMsg) {
+          if (responseMsg.errorCode) {
+            alert(responseMsg.errorDesc);
+            return;
+          }
+          return callback && callback();
+        }, "json");
+      };
+
+      mpContaniterModel.prototype.getDocumentList = function(classification, callback) {
+        return $.post(BASEPATH + "Document/getDocumentList", {
+          classification: classification
+        }, function(responseMsg) {
+          if (responseMsg.errorCode) {
+            alert(responseMsg.errorDesc);
+            return;
+          }
+          return callback && callback(responseMsg);
+        }, "json");
       };
 
       mpContaniterModel.prototype.login = function(loginPanel, loginObj, successHandler) {
@@ -45,7 +71,7 @@
             return;
           }
           responseUserInfo = responseMsg.userInfo || {};
-          $.cookie.setCookie("username", responseUserInfo.name);
+          $.cookie.setCookie("userid", responseUserInfo.userId);
           return loginPanel.dialog('close');
         }, "json");
       };

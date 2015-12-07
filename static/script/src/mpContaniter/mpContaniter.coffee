@@ -5,11 +5,17 @@ define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'doT!../views/
     mainBody = null
     doctorUrlPanel = null
     menuListPanel = null
+    documentPanel = null
+    currentClass = ""
+    table_head = null
     constructor: ->
       mainPanel = $('.mainPanel')
       mainBody = mainPanel.find('.mainBody')
+      table_head = mainBody.find(".table_head")
+      currentClass = table_head.find("span:eq(0)").data("id") || "XXG"
       mainHeader = mainPanel.find('.headerPanel')
       doctorUrlPanel = mainBody.find('.doctorListPanel')
+      documentPanel = mainBody.find(".document_context")
       menuListPanel = mainPanel.find('.menuList')
       @mpContaniterModel = new mpContaniterModel();
       doctorUrlList = @mpContaniterModel.getDoctorUrlList();
@@ -65,6 +71,21 @@ define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'doT!../views/
             height: 250;
             resizable: false
           )
+      )
+
+
+      mainBody.on("click",".courseware",(event)=>
+        ##点击课件
+        doctorUrlPanel.hide();
+        documentPanel.show();
+        ##获取分类的文件列表
+        @mpContaniterModel.getDocumentList($(".file_classification").val(),(responseMsg)->
+          console.log(responseMsg)
+        )
+      ).on("click",".change_classification",(event)=>
+        ##更换分类  心血管 ， 牙科。。。
+        _this = $(event.currentTarget)
+        $(".file_classification").val(_this.data("id"))
       )
 
       doctorPicIndex = 1

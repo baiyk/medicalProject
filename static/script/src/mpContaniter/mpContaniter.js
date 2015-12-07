@@ -5,7 +5,7 @@
   define(['doT!../views/main/doctorInfo', 'doT!../views/log/login', 'doT!../views/log/register', 'mpContaniterModel', 'aboutUsCtrl', 'desPartnersCtrl', 'USAExpertsCtrl', 'ui.dialog'], function(doctorInfo, loginTmp, registerTmp, mpContaniterModel, aboutUsCtrl, desPartnersCtrl, USAExpertsCtrl) {
     var mpContaniter;
     return mpContaniter = (function() {
-      var doctorUrlPanel, mainBody, mainHeader, mainPanel, menuListPanel;
+      var currentClass, doctorUrlPanel, documentPanel, mainBody, mainHeader, mainPanel, menuListPanel, table_head;
 
       mainPanel = null;
 
@@ -17,13 +17,22 @@
 
       menuListPanel = null;
 
+      documentPanel = null;
+
+      currentClass = "";
+
+      table_head = null;
+
       function mpContaniter() {
         this.bindEvent = bind(this.bindEvent, this);
         var doctorData, doctorUrlList, i, len, urlPanel;
         mainPanel = $('.mainPanel');
         mainBody = mainPanel.find('.mainBody');
+        table_head = mainBody.find(".table_head");
+        currentClass = table_head.find("span:eq(0)").data("id") || "XXG";
         mainHeader = mainPanel.find('.headerPanel');
         doctorUrlPanel = mainBody.find('.doctorListPanel');
+        documentPanel = mainBody.find(".document_context");
         menuListPanel = mainPanel.find('.menuList');
         this.mpContaniterModel = new mpContaniterModel();
         doctorUrlList = this.mpContaniterModel.getDoctorUrlList();
@@ -95,6 +104,20 @@
               height: 250,
               resizable: false
             });
+          };
+        })(this));
+        mainBody.on("click", ".courseware", (function(_this) {
+          return function(event) {
+            doctorUrlPanel.hide();
+            documentPanel.show();
+            return _this.mpContaniterModel.getDocumentList($(".file_classification").val(), function(responseMsg) {
+              return console.log(responseMsg);
+            });
+          };
+        })(this)).on("click", ".change_classification", (function(_this) {
+          return function(event) {
+            _this = $(event.currentTarget);
+            return $(".file_classification").val(_this.data("id"));
           };
         })(this));
         doctorPicIndex = 1;

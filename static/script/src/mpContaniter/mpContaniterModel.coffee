@@ -5,6 +5,31 @@ define([], ()->
     getDoctorUrlList: =>
       return [{id:1,url:'doctor/doctor1.png'},{id:2,url:'doctor/doctor2.png'}, {id:3,url:'doctor/doctor3.png'}]
 
+    getDocumentList : (classification,callback)=>
+      $.post(
+        BASEPATH + "Document/getDocumentList",
+        {
+          classification : classification
+        },
+      (responseMsg)->
+        if responseMsg.errorCode
+          alert(responseMsg.errorDesc);
+          return;
+        callback && callback()
+      ,"json")
+
+    getDocumentList: (classification,callback)=>
+      $.post(
+        BASEPATH + "Document/getDocumentList",
+        {
+           classification : classification
+        },
+      (responseMsg)->
+        if responseMsg.errorCode
+          alert(responseMsg.errorDesc);
+          return;
+        callback && callback(responseMsg)
+      ,"json")
 
     login: (loginPanel, loginObj, successHandler)=>
       loginDataList = loginPanel.find('.loginForm').serializeArray()
@@ -25,7 +50,7 @@ define([], ()->
             return;
           responseUserInfo = responseMsg.userInfo || {}
           ##存一下用户名，方便使用
-          $.cookie.setCookie("username",responseUserInfo.name)
+          $.cookie.setCookie("userid",responseUserInfo.userId)
           loginPanel.dialog('close')
           ##关闭弹出窗口
       ,"json")

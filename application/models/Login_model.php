@@ -20,7 +20,7 @@ class Login_model extends CI_Model{
         if(empty($userInfo["pwd"])){
             throw new Exception("用户的密码不为空",1001);
         }
-        $sql = "SELECT * FROM USER WHERE USERID = ? AND password = ?";
+        $sql = "SELECT GUID,userId,isAdmin FROM USER WHERE USERID = ? AND password = ?";
         $userQuery = $this->db->query($sql, array($userInfo["userId"], $userInfo["pwd"]));
         $userResult = $userQuery->result();
         if(count($userResult) <= 0){

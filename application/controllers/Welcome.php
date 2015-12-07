@@ -1,7 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-class Welcome extends CI_Controller {
+require_once(APPPATH.'controllers/BaseController.php');
+class Welcome extends BaseController {
 
 	/**
 	 * Index Page for this controller.
@@ -20,29 +19,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('upload');
+        $classifications = $this->config->config["classification"];
+		$this->load->view('welcome',array("classifications"=>$classifications));
 	}
 
-    public function uploadFile(){
-        $config['upload_path']      = "./file";
-        $config['allowed_types']    = 'gif|jpg|png|doc|pdf';
-        $config['max_size']     = 1000;
-        $config['max_width']        = 1024;
-        $config['max_height']       = 768;
-
-        $this->load->library('upload', $config);
-
-        if ( ! $this->upload->do_upload('userfile'))
-        {
-            $error = array('error' => $this->upload->display_errors());
-
-            throw new Exception($error["error"],"1000");
-        }
-        else
-        {
-            $data = array('upload_data' => $this->upload->data());
-
-            echo "成功";
-        }
-    }
 }
