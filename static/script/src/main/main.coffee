@@ -16,7 +16,6 @@ window.IMG_BASEPATH = window.STATIC_BASEPATH + "img/"
 require.config(
   baseUrl: 'static/script'
   paths:
-    'util' : "src/common/util"
     ztree: 'lib/jquery.ztree.all-3.5.min'
     doTCompiler:  'lib/doT/doT'
     text:'lib/requirejs-text/text'
@@ -69,6 +68,6 @@ require.config(
     'timepicker': ['ui.datepicker', 'ui.datepicker', 'ui.slider', 'ui.datepicker-zh-CN']
   doT:
     ext: '.html'
-  deps: ['util','token','index']
+  deps: ['token','index']
 
 )

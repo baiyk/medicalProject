@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href="<?php echo site_url("static");?>/style/index.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="<?php echo site_url("static");?>/script/lib/jquery-1.9.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<?php echo site_url("static");?>/script/src/common/util.js" charset="utf-8"></script>
     <script type="text/javascript" data-main="<?php echo site_url("static");?>/script/src/main/main.js" src="<?php echo site_url("static");?>/script/lib/require.js" charset="utf-8"></script>
     <title></title>
     <style>
