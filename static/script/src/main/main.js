@@ -17,7 +17,6 @@
   require.config({
     baseUrl: 'static/script',
     paths: {
-      'util': "src/common/util",
       ztree: 'lib/jquery.ztree.all-3.5.min',
       doTCompiler: 'lib/doT/doT',
       text: 'lib/requirejs-text/text',
@@ -73,7 +72,7 @@
     doT: {
       ext: '.html'
     },
-    deps: ['util', 'token', 'index']
+    deps: ['token', 'index']
   });
 
 }).call(this);
